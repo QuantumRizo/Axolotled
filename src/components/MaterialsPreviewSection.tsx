@@ -17,7 +17,7 @@ const MaterialsPreviewSection: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {/* Resins Card */}
-                    <Link to="/materiales" className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <Link to="/resinas" className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                         {/* Image Section */}
                         <div className="relative h-64 overflow-hidden">
                             <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: 'url(/resinas.jpg)' }}></div>
@@ -47,7 +47,7 @@ const MaterialsPreviewSection: React.FC = () => {
                     </Link>
 
                     {/* Filaments Card */}
-                    <Link to="/materiales" className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <Link to="/filamentos" className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                         {/* Image Section */}
                         <div className="relative h-64 overflow-hidden">
                             <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: 'url(/filamentos.jpeg)' }}></div>

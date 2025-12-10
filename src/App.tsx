@@ -8,8 +8,10 @@ import MaterialsPreviewSection from './components/MaterialsPreviewSection';
 import PackagesPreviewSection from './components/PackagesPreviewSection';
 
 import Footer from './components/Footer';
-import Materials from './pages/Materials';
 import Prices from './pages/Prices';
+
+import Resinas from './pages/Resinas';
+import Filamentos from './pages/Filamentos';
 
 const Home: React.FC = () => (
   <div className="min-h-screen bg-background flex flex-col">
@@ -45,7 +47,8 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/materiales" element={<Materials />} />
+        <Route path="/resinas" element={<Resinas />} />
+        <Route path="/filamentos" element={<Filamentos />} />
         <Route path="/precios" element={<Prices />} />
       </Routes>
     </Router>

@@ -18,7 +18,7 @@ const PackagesPreviewSection: React.FC = () => {
                             <span className="text-brand-sky font-medium">Cotización Transparente</span>
                         </div>
                         <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                            Paquetes y <span className="text-brand-orchid">Precios</span>
+                            Paquetes y <span className="text-brand-sky">Precios</span>
                         </h2>
                         <p className="text-gray-300 text-lg mb-8 leading-relaxed">
                             Conoce nuestros costos base por tamaño y material. Ofrecemos opciones flexibles desde prototipos rápidos hasta piezas industriales de alta gama.
