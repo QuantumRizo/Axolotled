@@ -62,7 +62,6 @@ const PackagesPreviewSection: React.FC = () => {
                             <div>
                                 <h3 className="text-2xl font-bold mb-1">Descuentos por Volumen</h3>
                                 <p className="text-gray-200 flex items-center gap-2">
-                                    <Sparkles className="w-4 h-4 text-brand-sky" />
                                     ¡Pregunta por nuestras promociones de temporada!
                                 </p>
                             </div>

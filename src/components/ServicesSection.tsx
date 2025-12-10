@@ -41,20 +41,38 @@ const ServicesSection: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {axolotlData.services3D.map((service, index) => {
                             const Icon = getIconFor3D(index);
+
+                            // Image Mapping
+                            let bgImage = '';
+                            if (service.title.includes('Resina')) bgImage = '/impresionresina.webp';
+                            else if (service.title.includes('Filamento')) bgImage = '/impresionfilamento.webp';
+                            else if (service.title.includes('Diseño')) bgImage = '/diseñoymodelado.webp';
+                            else if (service.title.includes('Pintura')) bgImage = '/pintura.webp';
+
                             return (
-                                <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group">
-                                    <div className="flex items-start gap-4">
-                                        <div className="p-3 rounded-xl bg-brand-deep/5 text-brand-deep group-hover:bg-brand-deep group-hover:text-white transition-colors duration-300">
-                                            <Icon className="w-8 h-8" />
+                                <div key={index} className="group relative flex flex-col overflow-hidden rounded-2xl bg-white hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                    {/* Image Section */}
+                                    <div className="relative h-64 overflow-hidden">
+                                        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: `url(${bgImage})` }}></div>
+                                        {/* Gradient Overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+
+                                        {/* Floating decorative blob - Color matches icon context if possible, default to sky/orchid */}
+                                        <div className={`absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 rounded-full blur-2xl transition-all opacity-40 ${index % 2 === 0 ? 'bg-brand-orchid' : 'bg-brand-sky'}`}></div>
+                                    </div>
+
+                                    {/* Content Section */}
+                                    <div className="relative p-8 flex flex-col items-center text-center flex-grow bg-white">
+                                        <div className={`w-16 h-16 -mt-16 relative z-10 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-gray-100`}>
+                                            <Icon className={`w-8 h-8 ${index % 2 === 0 ? 'text-brand-orchid' : 'text-brand-sky'}`} />
                                         </div>
-                                        <div>
-                                            <h4 className="text-xl font-bold text-textMain mb-3 group-hover:text-brand-deep transition-colors">
-                                                {service.title}
-                                            </h4>
-                                            <p className="text-textMuted leading-relaxed">
-                                                {service.description}
-                                            </p>
-                                        </div>
+
+                                        <h4 className="text-xl font-bold text-textMain mb-3 group-hover:text-brand-deep transition-colors">
+                                            {service.title}
+                                        </h4>
+                                        <p className="text-textMuted leading-relaxed flex-grow">
+                                            {service.description}
+                                        </p>
                                     </div>
                                 </div>
                             );

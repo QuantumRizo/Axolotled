@@ -17,17 +17,27 @@ const MaterialsPreviewSection: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {/* Resins Card */}
-                    <Link to="/materiales" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 p-8 hover:shadow-xl transition-all duration-300">
-                        <div className="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-brand-orchid/10 rounded-full blur-2xl group-hover:bg-brand-orchid/20 transition-all"></div>
+                    <Link to="/materiales" className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        {/* Image Section */}
+                        <div className="relative h-64 overflow-hidden">
+                            <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: 'url(/resinas.jpg)' }}></div>
+                            {/* Subtle Gradient Overlay for depth */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
-                        <div className="relative z-10 flex flex-col items-center text-center">
-                            <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            {/* Floating decorative blob */}
+                            <div className="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-brand-orchid/30 rounded-full blur-2xl group-hover:bg-brand-orchid/40 transition-all"></div>
+                        </div>
+
+                        {/* Content Section */}
+                        <div className="relative p-8 flex flex-col items-center text-center flex-grow bg-gradient-to-br from-gray-50 to-white">
+                            <div className="w-16 h-16 -mt-16 relative z-10 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-gray-100">
                                 <Beaker className="w-8 h-8 text-brand-orchid" />
                             </div>
+
                             <h3 className="text-2xl font-bold text-textMain mb-3 group-hover:text-brand-orchid transition-colors">
                                 Resinas (SLA)
                             </h3>
-                            <p className="text-textMuted mb-6">
+                            <p className="text-textMuted mb-6 flex-grow">
                                 Alta precisión y detalle. Desde materiales rígidos hasta flexibles y de ingeniería.
                             </p>
                             <span className="text-brand-deep font-semibold text-sm uppercase tracking-wider group-hover:underline decoration-2 underline-offset-4">
@@ -37,17 +47,27 @@ const MaterialsPreviewSection: React.FC = () => {
                     </Link>
 
                     {/* Filaments Card */}
-                    <Link to="/materiales" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 p-8 hover:shadow-xl transition-all duration-300">
-                        <div className="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-brand-sky/10 rounded-full blur-2xl group-hover:bg-brand-sky/20 transition-all"></div>
+                    <Link to="/materiales" className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        {/* Image Section */}
+                        <div className="relative h-64 overflow-hidden">
+                            <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: 'url(/filamentos.jpeg)' }}></div>
+                            {/* Subtle Gradient Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
-                        <div className="relative z-10 flex flex-col items-center text-center">
-                            <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            {/* Floating decorative blob */}
+                            <div className="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-brand-sky/30 rounded-full blur-2xl group-hover:bg-brand-sky/40 transition-all"></div>
+                        </div>
+
+                        {/* Content Section */}
+                        <div className="relative p-8 flex flex-col items-center text-center flex-grow bg-gradient-to-br from-gray-50 to-white">
+                            <div className="w-16 h-16 -mt-16 relative z-10 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-gray-100">
                                 <Layers className="w-8 h-8 text-brand-sky" />
                             </div>
+
                             <h3 className="text-2xl font-bold text-textMain mb-3 group-hover:text-brand-sky transition-colors">
                                 Filamentos (FDM)
                             </h3>
-                            <p className="text-textMuted mb-6">
+                            <p className="text-textMuted mb-6 flex-grow">
                                 Ideales para prototipos rápidos y piezas funcionales. PLA, PETG, TPU y ABS.
                             </p>
                             <span className="text-brand-deep font-semibold text-sm uppercase tracking-wider group-hover:underline decoration-2 underline-offset-4">
