@@ -1,5 +1,5 @@
 import React from 'react';
-import { User } from 'lucide-react';
+
 
 const AboutSection: React.FC = () => {
     return (
@@ -9,8 +9,8 @@ const AboutSection: React.FC = () => {
                     <div className="w-full md:w-1/2">
                         <div className="relative aspect-square max-w-md mx-auto">
                             <div className="absolute inset-0 bg-gradient-to-tr from-brand-sky to-brand-orchid rounded-2xl rotate-6 opacity-20 blur-lg mix-blend-multiply"></div>
-                            <div className="relative h-full w-full bg-white border border-gray-200 rounded-2xl flex items-center justify-center shadow-sm">
-                                <User className="w-24 h-24 text-textMuted" />
+                            <div className="relative h-full w-full bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+                                <img src="/who.jpg" alt="Who we are" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>

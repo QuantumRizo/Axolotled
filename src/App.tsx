@@ -4,10 +4,12 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
-import ProjectGrid from './components/ProjectGrid';
+import MaterialsPreviewSection from './components/MaterialsPreviewSection';
+import PackagesPreviewSection from './components/PackagesPreviewSection';
+
 import Footer from './components/Footer';
-import Projects from './pages/Projects';
-import About from './pages/About';
+import Materials from './pages/Materials';
+import Prices from './pages/Prices';
 
 const Home: React.FC = () => (
   <div className="min-h-screen bg-background flex flex-col">
@@ -19,8 +21,20 @@ const Home: React.FC = () => (
 
     <main className="relative z-10 bg-white shadow-xl">
       <AboutSection />
-      <ServicesSection />
-      <ProjectGrid />
+
+      <div id="services">
+        <ServicesSection />
+      </div>
+
+      <div id="materials">
+        <MaterialsPreviewSection />
+      </div>
+
+      <div id="pricing">
+        <PackagesPreviewSection />
+      </div>
+
+
       <Footer />
     </main>
   </div>
@@ -31,8 +45,8 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/proyectos" element={<Projects />} />
-        <Route path="/sobre-mi" element={<About />} />
+        <Route path="/materiales" element={<Materials />} />
+        <Route path="/precios" element={<Prices />} />
       </Routes>
     </Router>
   );
