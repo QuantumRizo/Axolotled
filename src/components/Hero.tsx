@@ -5,8 +5,31 @@ const Hero: React.FC = () => {
     return (
         <div className="relative h-full flex items-center justify-center overflow-hidden bg-gradient-to-r from-brand-deep to-brand-orchid pt-20">
             {/* Background Decorative Elements */}
+            {/* Existing soft blobs - kept for depth */}
             <div className="absolute top-[-20%] right-[-10%] w-[70%] h-[100%] bg-white/5 transform -skew-x-12 translate-x-[50%] z-0 blur-3xl rounded-full"></div>
             <div className="absolute bottom-[-20%] left-[-10%] w-[60%] h-[80%] bg-brand-sky/20 transform -skew-x-12 translate-x-[-50%] z-0 blur-3xl rounded-full"></div>
+
+            {/* Geometric Figures - Top Right */}
+            <div className="absolute top-0 right-0 w-full md:w-[50%] h-[100%] z-0 pointer-events-none overflow-hidden block">
+                <div className="relative w-full h-full transform scale-50 md:scale-100 origin-top-right">
+                    {/* Large Purple Angle */}
+                    <div className="absolute top-[-20%] right-[-20%] w-[800px] h-[800px] bg-brand-deep/20 transform rotate-45 translate-x-1/2 -translate-y-[20%]"></div>
+                    {/* Blue Accent Strip */}
+                    <div className="absolute top-[10%] right-[-10%] w-[600px] h-[100px] bg-brand-sky/30 transform -rotate-12 translate-x-[20%] shadow-lg backdrop-blur-sm"></div>
+                    {/* Orchid Accent Triangle/Rect */}
+                    <div className="absolute top-[30%] right-[-5%] w-[400px] h-[60px] bg-brand-orchid/40 transform -rotate-45 translate-x-[30%]"></div>
+                </div>
+            </div>
+
+            {/* Geometric Figures - Bottom Left */}
+            <div className="absolute bottom-0 left-0 w-full md:w-[50%] h-[100%] z-0 pointer-events-none overflow-hidden block">
+                <div className="relative w-full h-full transform scale-50 md:scale-100 origin-bottom-left">
+                    {/* Large White/Blue Angle */}
+                    <div className="absolute bottom-[-10%] left-[-20%] w-[800px] h-[800px] bg-white/10 transform rotate-[30deg] -translate-x-1/2 translate-y-[20%]"></div>
+                    {/* Deep Accent Strip */}
+                    <div className="absolute bottom-[20%] left-[-10%] w-[500px] h-[80px] bg-brand-deep/30 transform rotate-12 -translate-x-[20%] shadow-lg"></div>
+                </div>
+            </div>
 
             {/* Glass Container */}
             <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
