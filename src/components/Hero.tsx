@@ -15,12 +15,12 @@ const Hero: React.FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-brand-sky to-brand-orchid rounded-3xl rotate-1 blur-xl opacity-30 scale-105"></div>
 
                     {/* Glass Card */}
-                    <div className="relative bg-white/10 backdrop-blur-md border border-white/20 p-12 rounded-3xl shadow-2xl text-center">
-                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-white text-shadow-lg">
+                    <div className="relative bg-white/10 backdrop-blur-md border border-white/20 p-8 md:p-12 rounded-3xl shadow-2xl text-center">
+                        <h1 className="text-4xl md:text-7xl font-bold tracking-tight mb-6 text-white text-shadow-lg">
                             AXOLOTL._.ED
                         </h1>
 
-                        <h2 className="text-xl md:text-2xl font-light text-gray-100 mb-12 tracking-[0.25em] uppercase border-b border-white/30 pb-6 inline-block">
+                        <h2 className="text-lg md:text-2xl font-light text-gray-100 mb-8 md:mb-12 tracking-[0.25em] uppercase border-b border-white/30 pb-6 inline-block">
                             Arte, Electrónica y Diseño
                         </h2>
 
@@ -29,9 +29,9 @@ const Hero: React.FC = () => {
                                 href="https://www.instagram.com/axolotl._.ed/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group relative px-8 py-3 bg-white/10 overflow-hidden rounded-xl border border-white/30 text-white hover:bg-white hover:text-brand-deep transition-all duration-300 backdrop-blur-sm shadow-md hover:shadow-lg hover:-translate-y-1"
+                                className="group relative w-full sm:w-auto px-8 py-3 bg-white/10 overflow-hidden rounded-xl border border-white/30 text-white hover:bg-white hover:text-brand-deep transition-all duration-300 backdrop-blur-sm shadow-md hover:shadow-lg hover:-translate-y-1"
                             >
-                                <div className="relative flex items-center gap-2 font-bold tracking-wider">
+                                <div className="relative flex items-center justify-center gap-2 font-bold tracking-wider">
                                     <Instagram className="w-5 h-5" />
                                     <span>INSTAGRAM</span>
                                 </div>
@@ -41,9 +41,9 @@ const Hero: React.FC = () => {
                                 href="https://wa.me/5215532539481"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group relative px-8 py-3 bg-brand-sky/20 overflow-hidden rounded-xl border border-brand-sky/40 text-white hover:bg-brand-sky hover:text-white transition-all duration-300 backdrop-blur-sm shadow-md hover:shadow-lg hover:-translate-y-1"
+                                className="group relative w-full sm:w-auto px-8 py-3 bg-brand-sky/20 overflow-hidden rounded-xl border border-brand-sky/40 text-white hover:bg-brand-sky hover:text-white transition-all duration-300 backdrop-blur-sm shadow-md hover:shadow-lg hover:-translate-y-1"
                             >
-                                <div className="relative flex items-center gap-2 font-bold tracking-wider">
+                                <div className="relative flex items-center justify-center gap-2 font-bold tracking-wider">
                                     <MessageCircle className="w-5 h-5" />
                                     <span>WHATSAPP</span>
                                 </div>
