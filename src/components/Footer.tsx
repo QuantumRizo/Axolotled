@@ -46,6 +46,15 @@ const Footer: React.FC = () => {
                     <p>&copy; {new Date().getFullYear()} Axolotl._.ed. Todos los derechos reservados.</p>
                 </div>
             </div>
+            {/* Créditos del desarrollador */}
+            <a
+                href="https://davidrizo.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[10px]  hover:text-muted-foreground transition-colors uppercase tracking-wider"
+            >
+                Created by davidrizo.dev
+            </a>
         </footer>
     );
 };
