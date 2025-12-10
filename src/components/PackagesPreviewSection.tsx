@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Package, ArrowRight, Tag, Sparkles } from 'lucide-react';
+import { Package, ArrowRight, Tag } from 'lucide-react';
 import { axolotlData } from '../data/axolotlData';
 
 const PackagesPreviewSection: React.FC = () => {
