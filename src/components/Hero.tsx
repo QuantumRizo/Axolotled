@@ -18,6 +18,15 @@ const Hero: React.FC = () => {
                     <div className="absolute top-[10%] right-[-10%] w-[600px] h-[100px] bg-brand-sky/30 transform -rotate-12 translate-x-[20%] shadow-lg backdrop-blur-sm"></div>
                     {/* Orchid Accent Triangle/Rect */}
                     <div className="absolute top-[30%] right-[-5%] w-[400px] h-[60px] bg-brand-orchid/40 transform -rotate-45 translate-x-[30%]"></div>
+                    {/* Thin diagonal strip */}
+<div className="absolute top-[50%] right-[-5%] w-[500px] h-[40px] bg-white/10 transform -rotate-12 translate-x-[20%]"></div>
+
+{/* Soft purple rectangle */}
+<div className="absolute top-[70%] right-[10%] w-[300px] h-[120px] bg-brand-orchid/20 transform rotate-[25deg]"></div>
+
+{/* Blue triangle shape */}
+<div className="absolute top-[40%] right-[25%] w-[200px] h-[200px] bg-brand-sky/20 transform rotate-45 clip-path-polygon"></div>
+
                 </div>
             </div>
 
@@ -28,14 +37,21 @@ const Hero: React.FC = () => {
                     <div className="absolute bottom-[-10%] left-[-20%] w-[800px] h-[800px] bg-white/10 transform rotate-[30deg] -translate-x-1/2 translate-y-[20%]"></div>
                     {/* Deep Accent Strip */}
                     <div className="absolute bottom-[20%] left-[-10%] w-[500px] h-[80px] bg-brand-deep/30 transform rotate-12 -translate-x-[20%] shadow-lg"></div>
+                    {/* Soft white bar */}
+<div className="absolute bottom-[35%] left-[0%] w-[450px] h-[60px] bg-white/10 transform rotate-[18deg]"></div>
+
+{/* Deep purple square */}
+<div className="absolute bottom-[10%] left-[30%] w-[180px] h-[180px] bg-brand-deep/20 transform rotate-[12deg]"></div>
+
+{/* Sky-blue diagonal strip */}
+<div className="absolute bottom-[50%] left-[10%] w-[300px] h-[50px] bg-brand-sky/25 transform -rotate-[28deg]"></div>
+
                 </div>
             </div>
 
             {/* Glass Container */}
             <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                 <div className="relative">
-                    {/* Glow behind the glass */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-sky to-brand-orchid rounded-3xl rotate-1 blur-xl opacity-30 scale-105"></div>
 
                     {/* Glass Card */}
                     <div className="relative bg-white/10 backdrop-blur-md border border-white/20 p-8 md:p-12 rounded-3xl shadow-2xl text-center">
