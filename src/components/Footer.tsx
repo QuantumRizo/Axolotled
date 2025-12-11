@@ -48,13 +48,13 @@ const Footer: React.FC = () => {
             </div>
             {/* Créditos del desarrollador */}
             <a
-                href="https://davidrizo.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[10px]  hover:text-muted-foreground transition-colors uppercase tracking-wider"
-            >
-                Created by davidrizo.dev
-            </a>
+    href="https://davidrizo.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[10px] underline text-blue-600 hover:text-blue-700 transition-colors uppercase tracking-wider cursor-pointer"
+>
+    Created by davidrizo.dev
+</a>
         </footer>
     );
 };

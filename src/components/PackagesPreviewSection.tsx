@@ -31,7 +31,7 @@ const PackagesPreviewSection: React.FC = () => {
 
                     <div className="md:w-1/2 flex justify-center">
                         <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-brand-sky to-brand-orchid rounded-2xl rotate-6 blur-lg opacity-40"></div>
+                        
                             <div className="relative bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl max-w-sm">
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between border-b border-white/10 pb-4">

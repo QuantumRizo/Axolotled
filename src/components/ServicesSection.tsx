@@ -4,7 +4,6 @@ import { axolotlData } from '../data/axolotlData';
 
 const ServicesSection: React.FC = () => {
     const artisticServices = [
-        { name: 'Acuarelas', icon: Palette, color: 'text-brand-soft-blue' },
         { name: 'Ilustración Editorial', icon: BookOpen, color: 'text-brand-deep' },
         { name: 'Joyería', icon: Gem, color: 'text-brand-sky' },
         { name: 'Macramé', icon: Scissors, color: 'text-brand-orchid' },
@@ -85,7 +84,7 @@ const ServicesSection: React.FC = () => {
                     <h3 className="text-2xl font-bold text-white mb-8">
                         Arte y Creación Manual
                     </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                         {artisticServices.map((service) => (
                             <div key={service.name} className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-white/20 hover:shadow-lg hover:-translate-y-1 hover:bg-white transition-all duration-300 flex flex-col items-center text-center group h-full justify-center">
                                 <div className={`p-3 rounded-full bg-gray-50 mb-3 group-hover:bg-brand-soft-blue/10 transition-colors duration-300`}>
