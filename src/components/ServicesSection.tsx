@@ -4,7 +4,7 @@ import { axolotlData } from '../data/axolotlData';
 
 const ServicesSection: React.FC = () => {
     const artisticServices = [
-        { name: 'Ilustración Editorial', icon: BookOpen, color: 'text-brand-deep' },
+        { name: 'Ilustración/Narrativa gráfica', icon: BookOpen, color: 'text-brand-deep' },
         { name: 'Joyería', icon: Gem, color: 'text-brand-sky' },
         { name: 'Macramé', icon: Scissors, color: 'text-brand-orchid' },
         { name: 'Amigurumis', icon: Smile, color: 'text-brand-soft-blue' },
