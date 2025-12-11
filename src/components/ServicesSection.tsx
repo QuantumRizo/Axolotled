@@ -1,5 +1,5 @@
 import React from 'react';
-import { Palette, BookOpen, Gem, Scissors, Smile, Zap, Cuboid, Layers, PenTool, Brush } from 'lucide-react';
+import { BookOpen, Gem, Scissors, Smile, Zap, Cuboid, Layers, PenTool, Brush } from 'lucide-react';
 import { axolotlData } from '../data/axolotlData';
 
 const ServicesSection: React.FC = () => {
