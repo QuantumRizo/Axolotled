@@ -64,14 +64,25 @@ const Navigation: React.FC = () => {
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
                             {navLinks.map((link) => (
-                                <a
-                                    key={link.name}
-                                    href={link.path}
-                                    onClick={link.action as any}
-                                    className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 text-textMuted hover:text-brand-hover cursor-pointer`}
-                                >
-                                    {link.name}
-                                </a>
+                                link.path === '/' ? (
+                                    <Link
+                                        key={link.name}
+                                        to={link.path}
+                                        onClick={link.action as any}
+                                        className="px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 text-textMuted hover:text-brand-hover cursor-pointer"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ) : (
+                                    <a
+                                        key={link.name}
+                                        href={link.path}
+                                        onClick={link.action as any}
+                                        className="px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 text-textMuted hover:text-brand-hover cursor-pointer"
+                                    >
+                                        {link.name}
+                                    </a>
+                                )
                             ))}
                             <a
                                 href="#contacto"
@@ -99,14 +110,25 @@ const Navigation: React.FC = () => {
                 <div className="md:hidden bg-white/95 backdrop-blur-md border-b border-gray-200">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.path}
-                                onClick={link.action as any}
-                                className="block px-3 py-2 rounded-md text-base font-medium text-textMuted hover:text-brand-hover hover:bg-gray-50 cursor-pointer"
-                            >
-                                {link.name}
-                            </a>
+                            link.path === '/' ? (
+                                <Link
+                                    key={link.name}
+                                    to={link.path}
+                                    onClick={link.action as any}
+                                    className="block px-3 py-2 rounded-md text-base font-medium text-textMuted hover:text-brand-hover hover:bg-gray-50 cursor-pointer"
+                                >
+                                    {link.name}
+                                </Link>
+                            ) : (
+                                <a
+                                    key={link.name}
+                                    href={link.path}
+                                    onClick={link.action as any}
+                                    className="block px-3 py-2 rounded-md text-base font-medium text-textMuted hover:text-brand-hover hover:bg-gray-50 cursor-pointer"
+                                >
+                                    {link.name}
+                                </a>
+                            )
                         ))}
                         <a
                             href="#contacto"
