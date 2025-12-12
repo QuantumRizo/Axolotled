@@ -119,7 +119,7 @@ const ServicesSection: React.FC = () => {
                         Arte y Creación Manual
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {featuredArtServices.map((service, index) => {
+                        {featuredArtServices.map((service) => {
                             // Image logic
                             let bgImage = '';
                             let igHandle = '';
