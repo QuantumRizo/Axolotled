@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                             <a href="https://wa.me/5215532539481" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full text-textMain shadow-sm border border-gray-200 hover:text-brand-deep hover:border-brand-deep transition-all duration-300">
                                 <MessageCircle className="w-5 h-5" />
                             </a>
-                            <a href="mailto:contacto@axolotl.ed" className="p-3 bg-white rounded-full text-textMain shadow-sm border border-gray-200 hover:text-brand-deep hover:border-brand-deep transition-all duration-300">
+                            <a href="mailto:axolotl.e3d@gmail.com" className="p-3 bg-white rounded-full text-textMain shadow-sm border border-gray-200 hover:text-brand-deep hover:border-brand-deep transition-all duration-300">
                                 <Mail className="w-5 h-5" />
                             </a>
                         </div>
@@ -48,13 +48,13 @@ const Footer: React.FC = () => {
             </div>
             {/* Créditos del desarrollador */}
             <a
-    href="https://davidrizo.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-[10px] underline text-blue-600 hover:text-blue-700 transition-colors uppercase tracking-wider cursor-pointer"
->
-    Created by davidrizo.dev
-</a>
+                href="https://davidrizo.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[10px] underline text-blue-600 hover:text-blue-700 transition-colors uppercase tracking-wider cursor-pointer"
+            >
+                Created by davidrizo.dev
+            </a>
         </footer>
     );
 };
