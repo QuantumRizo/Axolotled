@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
                                 >
                                     <div className="relative flex items-center justify-center gap-2 font-bold tracking-wider">
                                         <MessageCircle className="w-5 h-5" />
-                                        <span>5517273806</span>
+                                        <span>5515273806</span>
                                     </div>
                                 </a>
 
