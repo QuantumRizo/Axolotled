@@ -15,16 +15,19 @@ const Footer: React.FC = () => {
                             Les compartimos el catálogo de productos y servicios que ofrecemos en AXOLOTLED.
                             Quedamos a sus órdenes para materializar sus ideas.
                         </p>
-                        <div className="flex gap-4">
-                            <a href="https://www.instagram.com/axolotl._.ed/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full text-textMain shadow-sm border border-gray-200 hover:text-brand-deep hover:border-brand-deep transition-all duration-300">
-                                <Instagram className="w-5 h-5" />
-                            </a>
-                            <a href="https://wa.me/5215532539481" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full text-textMain shadow-sm border border-gray-200 hover:text-brand-deep hover:border-brand-deep transition-all duration-300">
-                                <MessageCircle className="w-5 h-5" />
-                            </a>
-                            <a href="mailto:axolotl.e3d@gmail.com" className="p-3 bg-white rounded-full text-textMain shadow-sm border border-gray-200 hover:text-brand-deep hover:border-brand-deep transition-all duration-300">
+                        <div className="flex flex-col gap-4">
+                            <div className="flex gap-4">
+                                <a href="https://www.instagram.com/axolotl._.ed/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full text-textMain shadow-sm border border-gray-200 hover:text-brand-deep hover:border-brand-deep transition-all duration-300">
+                                    <Instagram className="w-5 h-5" />
+                                </a>
+                                <a href="https://wa.me/5215532539481" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full text-textMain shadow-sm border border-gray-200 hover:text-brand-deep hover:border-brand-deep transition-all duration-300">
+                                    <MessageCircle className="w-5 h-5" />
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-2 text-textMuted hover:text-brand-deep transition-colors duration-300">
                                 <Mail className="w-5 h-5" />
-                            </a>
+                                <span className="font-medium">axolotl.e3d@gmail.com</span>
+                            </div>
                         </div>
                     </div>
 
