@@ -12,6 +12,11 @@ import Prices from './pages/Prices';
 
 import Resinas from './pages/Resinas';
 import Filamentos from './pages/Filamentos';
+import BlogList from './pages/BlogList';
+import BlogPost from './pages/BlogPost';
+import MediosAcuosos from './pages/MediosAcuosos';
+import PinturasOpacas from './pages/PinturasOpacas';
+import Bisuteria from './pages/Bisuteria';
 
 const Home: React.FC = () => (
   <div className="min-h-screen bg-background flex flex-col">
@@ -50,6 +55,11 @@ const App: React.FC = () => {
         <Route path="/resinas" element={<Resinas />} />
         <Route path="/filamentos" element={<Filamentos />} />
         <Route path="/precios" element={<Prices />} />
+        <Route path="/blog" element={<BlogList />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/medios-acuosos" element={<MediosAcuosos />} />
+        <Route path="/pinturas-opacas" element={<PinturasOpacas />} />
+        <Route path="/bisuteria" element={<Bisuteria />} />
       </Routes>
     </Router>
   );

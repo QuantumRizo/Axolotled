@@ -45,6 +45,7 @@ const Navigation: React.FC = () => {
         { name: 'Inicio', path: '/', action: scrollToTop },
         { name: 'Servicios', path: '#services', action: (e: React.MouseEvent) => handleSectionClick(e, 'services') },
         { name: 'Materiales', path: '#materials', action: (e: React.MouseEvent) => handleSectionClick(e, 'materials') },
+        { name: 'Blog', path: '/blog', action: scrollToTop },
         { name: 'Paquetes y Precios', path: '#pricing', action: (e: React.MouseEvent) => handleSectionClick(e, 'pricing') },
     ];
 
